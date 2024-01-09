@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E8D6CF;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tile-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tile {
+    flex-basis: calc(50% - 40px);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Assign specific colors to each tile */
+#balanceTile {
+    background-color: #F7CE76; /* Rajah */
+}
+
+#pocketMoneyTile {
+    background-color: #E8D6CF; /* Dust Storm */
+}
+
+#interestTile {
+    background-color: #8C7386; /* Mountbatten Pink */
+}
+
+#totalTile {
+    background-color: #9C9359; /* Barley Corn */
+}
+
+.tile h2 {
+    margin-top: 10px;
+    font-size: 24px;
+    color: black;
+    white-space: nowrap;
+}
+
+.tile p {
+    color: black;
+    font-size: 16px;
+}
+
+.tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #333333;
+    margin-bottom: 40px;
+}
+
+/* Add this new class to style the link */
+.about-link {
+    display: inline-block;
+    padding: 20px;
+    font-size: 24px;
+    color: #333;
+    background-color: #E8D6CF;
+    border-radius: 15px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.about-link:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: #e8e8e8;
+}
+
+#offlineIndicator {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om appen</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+ 
+        <div class="container">
+            <div id="offlineIndicator" style="display: none;">Offline Mode</div>
+
+            <header>
+                <h1>Om appen</h1>
+            </header>
+            <main>
+            <div class="tile">
+                <h2>Saldo</h2>
+                <p>Visar det aktuella saldot i användarens digitala plånbok.</p>
+            </div>
+            <div class="tile">
+                <h2>Kommande Veckopeng</h2>
+                <p>Visar beloppet för nästa planerade veckopeng.</p>
+            </div>
+            <div class="tile">
+                <h2>Kommande Ränta</h2>
+                <p>Presenterar den beräknade räntan som kommer att läggas till saldot.</p>
+            </div>
+            <div class="tile">
+                <h2>Totalt Kommande Belopp</h2>
+                <p>Sammanställer totalbeloppet inklusive nästa veckopeng och ränta.</p>
+            </div>
+            <a href="/index.html" class="about-link">Tillbaka till startsidan</a>
+        </main>
+        <footer>
+            <p>© 2024 CodedByKay</p>
+        </footer>
+        </div>
+  
+    <script src="script.js"></script> 
+
+    <style>
+                .tile {
+            /* existing styles */
+            word-wrap: break-word; /* Break long words to prevent overflow */
+            padding: 10px; /* Adjust padding */
+            margin-bottom: 20px; /* Space between tiles */
+        }
+
+        .tile h2 {
+            font-size: 18px; /* Adjust heading size if needed */
+            margin-bottom: 5px; /* Space between heading and paragraph */
+        }
+
+        .tile p {
+            font-size: 16px; /* Adjust paragraph size if needed */
+        }
+
+    </style>
+</body>
+</html>
